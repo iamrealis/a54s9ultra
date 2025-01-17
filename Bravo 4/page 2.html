@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Else test</title>
+</head>
+<body>
+<div style="text-align: center;"><b><h1 style="font-style: italic;color: deeppink;">Quiz</h1></b></div>
+<p> How old is Wenzel?</p>
+<br>
+<p>1. 18</p>
+<p>2. 17</p>
+<p>3. 2</p>
+<input type="text" id="Q1 ans">
+<button onclick="checkanswers">Submit</button>
+<script>
+    function checkanswers(){
+    var correct=0
+var answer = document.getElementById("Q1 ans").value;
+    if(answer=="3"){
+        correct++;
+    }
+    alert("Your score"+ correct );
+}
+</script>
+
+    
+</body>
+</html>
